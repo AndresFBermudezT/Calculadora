@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Hola JavaScript  </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/logica.js"></script>
+
+  </head>
+  <body>       
+    <div id="contenedor"> 
+      <div id="izquierda">
+        <span id="time">00:00</span>
+      </div> 
+      <div id="derecha"><img src="css/img/red.png" class="menu"><img src="css/img/wifi.png" class="menu"><img src="css/img/carga.png" class="menu"></div>
+      <header> 
+        <div class="expresion">
+          <input type="text" id="operacion" class="expresion" maxlength="12" onkeyup="filtro()">
+        </div>
+
+      </header>
+      <aside>
+        <li>
+           <ul><button class="boton_general operadores" onclick="">/</button></ul>
+         <ul><button class="boton_general operadores">*</button></ul>
+         <ul><button class="boton_general operadores">-</button></ul>
+         <ul><button class="boton_general operadores">+</button></ul>
+         <ul><button class="boton_general operadores" onclick="resolver()">=</button></ul>
+        </li>
+         
+      </aside>
+
+      <article>
+        <section>          
+          <button class="boton_general funciones" onclick="borrar()">AC</button>
+          <button class="boton_general funciones">+/-</button>
+          <button class="boton_general funciones">%</button>
+        </section>
+        <section>          
+          <button class="boton_general numeros" onclick="escribir(7)">7</button>
+          <button class="boton_general numeros" onclick="escribir(8)">8</button>
+          <button class="boton_general numeros" onclick="escribir(9)">9</button>
+        </section>
+        <section>          
+          <button class="boton_general numeros" onclick="escribir(4)">4</button>
+          <button class="boton_general numeros" onclick="escribir(5)">5</button>
+          <button class="boton_general numeros" onclick="escribir(6)">6</button>
+        </section>
+        <section>          
+          <button class="boton_general numeros" onclick="escribir(1)">1</button>
+          <button class="boton_general numeros" onclick="escribir(2)">2</button>
+          <button class="boton_general numeros" onclick="escribir(3)">3</button>
+        </section>
+ 
+        <section>          
+          <button class="boton_general numeros"  id="cero">0</button>
+          <button class="boton_general numeros" onclick="escribir(',')">,</button>
+        </section>
+    
+       
+      </article>
+
+      <script src="js/logica.js"></script>
+
+
+
+          
+   
+      </div>
+  </body>
+</html>
